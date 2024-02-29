@@ -1,0 +1,27 @@
+/* formatting paragraph with color and font size */
+p {
+    color: darkseagreen;
+    font-size: 16px;
+}
+
+h2 {
+    color: gray;
+    font-weight: bold;
+}
+table, td, th{
+    border-style: dashed;
+    border-color: hotpink;
+}
+#new-class{
+    color: gray;
+    font-size: 10px
+}
+/* using IDs and class to format parts of the website */
+p.important-link{
+    color: hotpink;
+}
+/* Define the logo class with width and height attributes */
+img.logo{
+    width:267px;
+    height: 72px;
+}
