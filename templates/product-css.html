@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TerpStore - Hat</title>
+    <style>
+        h2 {
+            color: #900C3F;
+            font-size: 24px;
+            margin-left: 2px;
+        }
+        h3.product-name{
+            font-size: 1em;
+            text-decoration: underline;
+        }
+        #current-path{
+            display: flex;
+        }
+    </style>
+    <link type="text/css" href="{{ url_for('static', filename='/css/style.css') }}" rel = "stylesheet">
+  </head>
+  <body>
+<!-- Navigation Bar -->
+    <div class="nav-div">
+        <nav class="navbar">
+
+            <a class="logo" href="/">TerpStore</a>
+            <ul>
+                <li>
+                    <a id="home" href="/">View All Products</a>
+                </li>
+                <li>
+                    <a id="cart_view" href="#">View Cart</a>
+                </li>
+
+            </ul>
+
+
+
+            <ul>
+                <li>
+                    Welcome, User!
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Inline-style-->
+    <!--Also note the precedence inline takes over external(font-family)-->
+    <h1 style="color: gray; font-size:32px; font-family: 'Bookman Old Style'">TerpStore</h1>
+    <h2>View Product</h2>
+
+    <ol id="current-path">
+        <li id="path-item">
+            <a href="/">Home</a> >
+        </li>
+        <li id="path-item">View Product</li>
+    </ol>
+
+
+    <!-- Product Details -->
+`   <div class="parent-div">
+        <div class = "image-div">
+            <a href="https://rhsmith.umd.edu" target = "_blank">
+                <img src="https://terpconnect.umd.edu/~jbono/bmgt407/images/umd_hat.jpg" width="300" height="300" alt="Picture of Hat">
+            </a>
+        </div>
+
+
+        <div class = "details-div">
+            <h3>Product Details</h3>
+
+            <h3 class = "product-name">Hat</h3>
+            <h4>$14.95</h4>
+            <hr>
+            <strong>Show your Terp spirit by wearing this stylish hat.</strong>
+            <hr>
+
+            <!--Inline-style-->
+            <p style="color: maroon; font-style: italic">Size Chart</p>
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Head Circumference (in)</th>
+                </tr>
+                <tr>
+                    <td>S/M</td>
+                    <td>20.8 - 21.5</td>
+                </tr>
+                <tr>
+                    <td>M/L</td>
+                    <td>22 - 23</td>
+                </tr>
+                <tr>
+                    <td>L/XL</td>
+                    <td>23 - 24.2</td>
+                </tr>
+                <tr>
+                    <td>YSM/YMD</td>
+                    <td>20.1 - 21.2</td>
+                </tr>
+                <tr>
+                    <td>YMD/YLG</td>
+                    <td>20.8 - 22</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <p class="footer">Built with ❤️ in BMGT407 at the <a class="bold-url" href="https://rhsmith.umd.edu/">Robert H Smith School of Business</a></p>
+  </body>
+</html>
